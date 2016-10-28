@@ -1,0 +1,10 @@
+<h1>Pars</h1>
+
+<% @parser.each do |pars| %>
+  <div>
+    <div>
+      <%= pars[:name] %>
+    </div>
+    <audio controls style='width: 600px'><source src=<%= pars[:source] %> type="audio/mpeg"></audio>
+  </div>
+<% end %>
